@@ -1,0 +1,2149 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasil Repasses • Conexão MT • PR • SP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Oswald', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#09090b',
+            charcoal: '#111114',
+            surface: '#18181d',
+            gold: {
+              300: '#fde047',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Estética country-luxury em tons escuros e dourados */
+    body {
+      background-color: #09090b;
+      color: #f4f4f5;
+      overflow-x: hidden;
+    }
+
+    .gold-text-gradient {
+      background: linear-gradient(135deg, #fef08a 0%, #eab308 52%, #a16207 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-backdrop {
+      background-image:
+        radial-gradient(circle at 80% 15%, rgba(234, 179, 8, 0.16), transparent 45%),
+        radial-gradient(circle at 15% 80%, rgba(202, 138, 4, 0.12), transparent 50%),
+        linear-gradient(180deg, rgba(9, 9, 11, 0.85) 0%, rgba(17, 17, 20, 0.98) 100%);
+    }
+
+    .gold-border-glow {
+      box-shadow: 0 0 0 1px rgba(234, 179, 8, 0.25), 0 18px 40px -15px rgba(0, 0, 0, 0.85);
+    }
+
+    .dropzone-active {
+      border-color: #facc15 !important;
+      background-color: rgba(234, 179, 8, 0.12) !important;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-obsidian text-zinc-100 antialiased">
+  <!-- CABEÇALHO FIXO -->
+  <header class="sticky top-0 z-40 bg-obsidian/95 backdrop-blur-md border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+      <!-- Marca -->
+      <a href="#topo" class="flex items-center gap-2.5 group min-w-0">
+        <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-gold-300 via-gold-500 to-gold-600 text-obsidian flex items-center justify-center font-display font-bold text-lg shadow-md shadow-gold-500/20 shrink-0">
+          BR
+        </span>
+        <div class="truncate">
+          <span class="font-display text-lg sm:text-xl font-bold uppercase tracking-wider text-white">
+            Brasil <span class="text-gold-400">Repasses</span>
+          </span>
+          <span class="hidden md:inline-block ml-2 text-xs text-zinc-400 font-medium">
+            MT • PR • SP
+          </span>
+        </div>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav aria-label="Navegação principal" class="hidden lg:flex items-center gap-6 text-sm font-medium text-zinc-300">
+        <a href="#categorias" class="hover:text-gold-400 transition-colors">Categorias</a>
+        <a href="#central-abas" class="hover:text-gold-400 transition-colors">Vitrine</a>
+        <a href="#pilares" class="hover:text-gold-400 transition-colors">Procedência</a>
+        <a href="#conexao-estados" class="hover:text-gold-400 transition-colors">Conexão MT•PR•SP</a>
+      </nav>
+
+      <!-- Ações Rápidas WhatsApp (66) 99987-0146 -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a
+          href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+          target="_blank"
+          rel="noopener noreferrer"
+          data-whatsapp-action="header-numero"
+          class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-surface hover:bg-zinc-800 border border-gold-500/40 text-gold-300 font-semibold text-xs tracking-wide transition-colors"
+        >
+          (66) 99987-0146
+        </a>
+        <a
+          href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20quero%20atendimento%20no%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+          target="_blank"
+          rel="noopener noreferrer"
+          data-whatsapp-action="header-chamar"
+          data-open-modal="Atendimento Geral"
+          class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-bold text-xs sm:text-sm tracking-wide uppercase hover:brightness-110 active:scale-[0.99] transition-all shadow-md shadow-gold-500/20"
+        >
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Barra de contingência exibida quando frame/preview/pop-up bloqueia navegação externa -->
+    <div id="fallback-barra-whatsapp" class="hidden bg-charcoal border-t border-gold-500/45 px-4 py-2.5">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+        <div class="space-y-0.5">
+          <p class="font-bold text-gold-300">
+            WhatsApp (66) 99987-0146 — Link direto caso o preview bloqueie a janela:
+          </p>
+          <a
+            href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gold-400 hover:text-gold-300 underline break-all font-mono text-[11px]"
+          >
+            https://wa.me/5566999870146
+          </a>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button
+            type="button"
+            data-copiar-whatsapp
+            class="px-3 py-1.5 rounded-lg bg-gold-500 hover:bg-gold-400 text-obsidian font-extrabold text-[11px] uppercase tracking-wider cursor-pointer"
+          >
+            Copiar link
+          </button>
+          <a
+            href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-3 py-1.5 rounded-lg bg-surface hover:bg-zinc-800 border border-gold-500/40 text-gold-300 font-bold text-[11px] uppercase tracking-wider"
+          >
+            Abrir WhatsApp
+          </a>
+          <button
+            type="button"
+            id="btn-fechar-fallback-barra"
+            aria-label="Ocultar aviso de contingência"
+            class="px-2 py-1.5 rounded-lg bg-obsidian hover:bg-zinc-800 text-zinc-400 hover:text-white text-xs cursor-pointer"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+      <p id="status-copia-barra" class="hidden max-w-7xl mx-auto mt-1 text-[11px] text-emerald-300 font-medium"></p>
+    </div>
+  </header>
+
+  <main id="topo" class="flex-1">
+    <!-- SEÇÃO HERO -->
+    <section class="hero-backdrop relative border-b border-zinc-800/80 pt-10 pb-14 sm:pt-16 sm:pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-medium">
+            <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+            <span>Eixo Estratégico • Conexão MT • PR • SP</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold uppercase tracking-tight leading-[0.98]">
+            <span class="block text-white">Aqui é Procedência,</span>
+            <span class="block gold-text-gradient mt-1">Não é Conversa Fiada!</span>
+          </h1>
+
+          <p class="text-zinc-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            O <strong class="text-white font-semibold">Brasil Repasses</strong> reúne oportunidades reais entre
+            <strong class="text-gold-300">Mato Grosso, Paraná e São Paulo</strong>, com veículos populares, esportivos e caminhonetes rurais em negociação direta pelo WhatsApp <strong class="text-gold-300">(66) 99987-0146</strong>.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <a
+              href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20Brasil%20Repasses%20sobre%20ve%C3%ADculos%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+              target="_blank"
+              rel="noopener noreferrer"
+              data-whatsapp-action="hero-chamar"
+              class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-sm sm:text-base uppercase tracking-wider hover:brightness-110 transition-all shadow-xl shadow-gold-500/25 flex items-center justify-center gap-2"
+            >
+              <span>Falar no WhatsApp (66) 99987-0146</span>
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a
+              href="#central-abas"
+              class="w-full sm:w-auto px-7 py-4 rounded-xl bg-surface hover:bg-zinc-800 border border-zinc-700 text-zinc-100 font-semibold text-sm sm:text-base transition-colors flex items-center justify-center"
+            >
+              Explorar Vitrine e Abas
+            </a>
+          </div>
+
+          <!-- Caixa de contingência direta logo abaixo dos botões principais -->
+          <div id="fallback-caixa-whatsapp" class="hidden max-w-2xl mx-auto lg:mx-0 p-4 rounded-2xl bg-surface border border-gold-500/45 text-left space-y-2">
+            <p class="text-xs font-bold text-gold-300 uppercase tracking-wider">
+              Acesso Direto ao WhatsApp (66) 99987-0146
+            </p>
+            <p class="text-xs text-zinc-300">
+              Se a nova aba não abriu automaticamente neste preview, clique no link abaixo ou copie para abrir no WhatsApp:
+            </p>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-1">
+              <a
+                href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs font-mono text-gold-400 hover:text-gold-300 underline break-all"
+              >
+                https://wa.me/5566999870146
+              </a>
+              <button
+                type="button"
+                data-copiar-whatsapp
+                class="px-3.5 py-2 rounded-xl bg-gradient-to-r from-gold-400 to-gold-600 text-obsidian font-extrabold text-xs uppercase tracking-wider cursor-pointer shrink-0"
+              >
+                Copiar link
+              </button>
+            </div>
+            <p id="status-copia-caixa" class="hidden text-xs text-emerald-300 font-medium"></p>
+          </div>
+        </div>
+
+        <!-- Cartão Destaque da Marca -->
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl bg-surface/95 border border-gold-500/35 p-6 sm:p-7 gold-border-glow space-y-5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 border border-gold-500/30 text-gold-300 text-xs font-bold uppercase tracking-wider">
+                Brasil Repasses • Oficial
+              </span>
+              <span class="text-xs font-semibold text-zinc-400">MT • PR • SP</span>
+            </div>
+
+            <div class="rounded-2xl bg-gradient-to-br from-charcoal via-obsidian to-zinc-900 border border-zinc-800 p-5 space-y-3">
+              <p class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
+                Força na Estrada e no Agro
+              </p>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+                Curadoria de veículos com foco em giro rápido, transparência na negociação e atendimento direto no <strong class="text-gold-300">(66) 99987-0146</strong>.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2.5 text-center">
+              <div class="p-3 rounded-xl bg-obsidian border border-zinc-800">
+                <p class="font-display text-lg font-bold text-gold-400">Popular</p>
+                <p class="text-[11px] text-zinc-400">Alto giro</p>
+              </div>
+              <div class="p-3 rounded-xl bg-obsidian border border-zinc-800">
+                <p class="font-display text-lg font-bold text-gold-400">Esportivo</p>
+                <p class="text-[11px] text-zinc-400">Performance</p>
+              </div>
+              <div class="p-3 rounded-xl bg-obsidian border border-zinc-800">
+                <p class="font-display text-lg font-bold text-gold-400">Rural</p>
+                <p class="text-[11px] text-zinc-400">Agro e 4x4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS DE VEÍCULOS -->
+    <section id="categorias" class="py-14 sm:py-20 bg-charcoal border-b border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Segmentos em Destaque</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold uppercase text-white mt-1">
+            Categorias do Repasse
+          </h2>
+          <p class="text-zinc-400 text-sm sm:text-base mt-2">
+            Escolha o perfil do veículo que você busca ou negocia no eixo Mato Grosso, Paraná e São Paulo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Popular -->
+          <div class="rounded-2xl bg-surface border border-zinc-800 hover:border-gold-500/45 p-6 flex flex-col justify-between gap-6 transition-all">
+            <div class="space-y-2.5">
+              <span class="inline-block px-3 py-1 rounded-md bg-gold-500/15 text-gold-300 text-xs font-bold uppercase">
+                Categoria 01
+              </span>
+              <h3 class="font-display text-2xl font-bold uppercase text-white">Veículos Populares</h3>
+              <p class="text-sm text-zinc-400 leading-relaxed">
+                Hatches, sedãs e utilitários compactos de excelente liquidez para uso diário, frotas e revenda ágil.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-open-modal="Popular"
+              class="w-full py-3 px-4 rounded-xl bg-obsidian hover:bg-zinc-800 border border-gold-500/35 text-gold-300 font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
+            >
+              Consultar Populares no WhatsApp
+            </button>
+          </div>
+
+          <!-- Esportivo -->
+          <div class="rounded-2xl bg-surface border border-zinc-800 hover:border-gold-500/45 p-6 flex flex-col justify-between gap-6 transition-all">
+            <div class="space-y-2.5">
+              <span class="inline-block px-3 py-1 rounded-md bg-gold-500/15 text-gold-300 text-xs font-bold uppercase">
+                Categoria 02
+              </span>
+              <h3 class="font-display text-2xl font-bold uppercase text-white">Veículos Esportivos</h3>
+              <p class="text-sm text-zinc-400 leading-relaxed">
+                Modelos de alto desempenho, potência e presença marcante para quem valoriza estilo e exclusividade.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-open-modal="Esportivo"
+              class="w-full py-3 px-4 rounded-xl bg-obsidian hover:bg-zinc-800 border border-gold-500/35 text-gold-300 font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
+            >
+              Consultar Esportivos no WhatsApp
+            </button>
+          </div>
+
+          <!-- Caminhonete/Rural -->
+          <div class="rounded-2xl bg-surface border border-zinc-800 hover:border-gold-500/45 p-6 flex flex-col justify-between gap-6 transition-all">
+            <div class="space-y-2.5">
+              <span class="inline-block px-3 py-1 rounded-md bg-gold-500/15 text-gold-300 text-xs font-bold uppercase">
+                Categoria 03
+              </span>
+              <h3 class="font-display text-2xl font-bold uppercase text-white">Caminhonetes / Rural</h3>
+              <p class="text-sm text-zinc-400 leading-relaxed">
+                Picapes 4x4, diesel e máquinas voltadas ao agronegócio e às rodovias de MT, PR e SP.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-open-modal="Caminhonete/Rural"
+              class="w-full py-3 px-4 rounded-xl bg-obsidian hover:bg-zinc-800 border border-gold-500/35 text-gold-300 font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
+            >
+              Consultar Caminhonetes / Rural
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CENTRAL DE ABAS: VITRINE, WHATSAPP E ÁREA RESTRITA (LOGIN DUPLO) -->
+    <section id="central-abas" class="py-14 sm:py-20 bg-obsidian border-b border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Operação & Vitrine</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-bold uppercase text-white mt-1">
+              Central Brasil Repasses
+            </h2>
+            <p class="text-zinc-400 text-sm sm:text-base mt-2 max-w-2xl">
+              Navegue pelos veículos disponíveis, fale direto no WhatsApp <strong class="text-gold-300">(66) 99987-0146</strong> ou acesse a área restrita com login em duas etapas.
+            </p>
+          </div>
+
+          <!-- Seletor de Abas -->
+          <div role="tablist" aria-label="Abas principais" class="flex flex-wrap gap-2.5">
+            <button
+              id="tab-btn-vitrine"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-tab-target="tab-panel-vitrine"
+              class="px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian shadow-md shadow-gold-500/20 transition-all cursor-pointer"
+            >
+              Vitrine de Veículos (<span id="contador-vitrine">0</span>)
+            </button>
+
+            <button
+              id="tab-btn-whatsapp"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-tab-target="tab-panel-whatsapp"
+              class="px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-surface hover:bg-zinc-800 text-gold-300 border border-gold-500/40 transition-all cursor-pointer inline-flex items-center gap-1.5"
+            >
+              <span>WhatsApp (66) 99987-0146</span>
+            </button>
+
+            <button
+              id="tab-btn-restrito"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-tab-target="tab-panel-restrito"
+              class="px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-200 border border-zinc-700 transition-all cursor-pointer inline-flex items-center gap-2"
+            >
+              <span>Área Restrita / Adicionar Veículo</span>
+              <span id="badge-cadeado" class="px-2 py-0.5 rounded bg-obsidian text-[10px] text-gold-400 border border-gold-500/30">
+                BLOQUEADO
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PAINEL 1: VITRINE PÚBLICA -->
+        <div id="tab-panel-vitrine" role="tabpanel" aria-labelledby="tab-btn-vitrine" class="space-y-6">
+          <div class="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              data-filtro="Todos"
+              class="filtro-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-gold-500 text-obsidian cursor-pointer transition-colors"
+            >
+              Todos
+            </button>
+            <button
+              type="button"
+              data-filtro="Popular"
+              class="filtro-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-300 border border-zinc-700 cursor-pointer transition-colors"
+            >
+              Popular
+            </button>
+            <button
+              type="button"
+              data-filtro="Esportivo"
+              class="filtro-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-300 border border-zinc-700 cursor-pointer transition-colors"
+            >
+              Esportivo
+            </button>
+            <button
+              type="button"
+              data-filtro="Caminhonete/Rural"
+              class="filtro-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-300 border border-zinc-700 cursor-pointer transition-colors"
+            >
+              Caminhonete/Rural
+            </button>
+          </div>
+
+          <div id="grid-veiculos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+          <div id="vitrine-vazia" class="hidden rounded-2xl bg-surface border border-zinc-800 p-8 text-center space-y-3">
+            <p class="font-display text-2xl font-bold uppercase text-white">Nenhum veículo nesta categoria</p>
+            <p class="text-sm text-zinc-400">Selecione outro filtro ou fale no WhatsApp (66) 99987-0146 para novas oportunidades.</p>
+          </div>
+        </div>
+
+        <!-- PAINEL DEDICADO: ABA WHATSAPP (66) 99987-0146 -->
+        <div id="tab-panel-whatsapp" role="tabpanel" aria-labelledby="tab-btn-whatsapp" class="hidden">
+          <div class="max-w-3xl mx-auto rounded-3xl bg-surface border border-gold-500/40 p-6 sm:p-8 gold-border-glow space-y-5">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-800 pb-4">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Atendimento Direto • MT • PR • SP</span>
+                <h3 class="font-display text-2xl sm:text-3xl font-bold uppercase text-white mt-1">
+                  WhatsApp Brasil Repasses • (66) 99987-0146
+                </h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-obsidian border border-gold-500/35 text-gold-300 text-xs font-bold self-start sm:self-auto">
+                5566999870146
+              </span>
+            </div>
+
+            <p class="text-sm text-zinc-300 leading-relaxed">
+              Chame diretamente no WhatsApp <strong class="text-white">(66) 99987-0146</strong> para consultar disponibilidade de veículos populares, esportivos ou caminhonetes/rurais e negociar com procedência.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pela%20aba%20WhatsApp%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+                target="_blank"
+                rel="noopener noreferrer"
+                data-whatsapp-action="aba-whatsapp"
+                class="flex-1 py-4 px-6 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-sm uppercase tracking-wider hover:brightness-110 transition-all text-center shadow-lg shadow-gold-500/20"
+              >
+                Abrir Conversa com (66) 99987-0146
+              </a>
+              <button
+                type="button"
+                data-copiar-whatsapp
+                class="py-4 px-5 rounded-xl bg-obsidian hover:bg-zinc-800 border border-gold-500/40 text-gold-300 font-bold text-xs sm:text-sm uppercase tracking-wider transition-colors cursor-pointer"
+              >
+                Copiar link
+              </button>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-obsidian border border-zinc-800 space-y-1">
+              <span class="text-[11px] font-semibold uppercase tracking-wider text-zinc-400">Link Direto WhatsApp:</span>
+              <a
+                href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pela%20aba%20WhatsApp%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block text-xs font-mono text-gold-400 hover:text-gold-300 underline break-all"
+              >
+                https://wa.me/5566999870146
+              </a>
+              <p id="status-copia-aba" class="hidden text-xs text-emerald-300 font-medium pt-1"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAINEL 2: ÁREA RESTRITA COM LOGIN EM DUAS ETAPAS (SEM DICAS OU CREDENCIAIS NA UI) -->
+        <div id="tab-panel-restrito" role="tabpanel" aria-labelledby="tab-btn-restrito" class="hidden space-y-6">
+          <!-- Status do Armazenamento -->
+          <div class="p-3.5 rounded-2xl bg-charcoal border border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+            <span class="text-zinc-300 font-medium">Persistência de Dados:</span>
+            <span
+              id="status-storage-badge"
+              class="px-3 py-1 rounded-full bg-surface text-gold-300 border border-gold-500/35 font-bold uppercase tracking-wider self-start sm:self-auto"
+            >
+              LocalStorage + Compressão Ativos
+            </span>
+          </div>
+
+          <!-- FLUXO DE LOGIN EM DUAS ETAPAS -->
+          <div id="painel-login-duplo" class="max-w-xl mx-auto rounded-3xl bg-surface border border-gold-500/35 p-6 sm:p-8 gold-border-glow space-y-6">
+            <div class="border-b border-zinc-800 pb-4">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold-400">
+                Acesso Restrito • Autenticação em 2 Etapas
+              </span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold uppercase text-white mt-1">
+                Login em Duas Etapas
+              </h3>
+              <p class="text-xs sm:text-sm text-zinc-400 mt-1">
+                Conclua a primeira etapa de autenticação e em seguida valide o código e o PIN de segurança.
+              </p>
+            </div>
+
+            <!-- Indicador Visual das 2 Etapas -->
+            <div class="grid grid-cols-2 gap-3">
+              <div id="etapa-card-1" class="p-3.5 rounded-2xl bg-gold-500/15 border border-gold-500/50">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-gold-400">Etapa 1 de 2</p>
+                <p class="text-sm font-bold text-white mt-0.5">Usuário e Senha</p>
+              </div>
+              <div id="etapa-card-2" class="p-3.5 rounded-2xl bg-obsidian border border-zinc-800 opacity-65">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-zinc-400">Etapa 2 de 2</p>
+                <p class="text-sm font-bold text-zinc-300 mt-0.5">Código e PIN</p>
+              </div>
+            </div>
+
+            <!-- FORMULÁRIO LOGIN 1 -->
+            <form id="form-etapa-1" class="space-y-4">
+              <div>
+                <label for="input-usuario-login1" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
+                  Usuário
+                </label>
+                <input
+                  id="input-usuario-login1"
+                  type="text"
+                  required
+                  autocomplete="username"
+                  placeholder="Informe o usuário"
+                  class="w-full px-4 py-3 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                />
+              </div>
+
+              <div>
+                <label for="input-senha-login1" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
+                  Senha
+                </label>
+                <input
+                  id="input-senha-login1"
+                  type="password"
+                  required
+                  autocomplete="current-password"
+                  placeholder="Informe a senha"
+                  class="w-full px-4 py-3 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-sm uppercase tracking-wider hover:brightness-110 transition-all cursor-pointer"
+              >
+                Avançar para Etapa 2 →
+              </button>
+            </form>
+
+            <!-- FORMULÁRIO LOGIN 2 -->
+            <form id="form-etapa-2" class="hidden space-y-4">
+              <div class="p-3.5 rounded-xl bg-emerald-950/50 border border-emerald-500/35 text-xs text-emerald-200 flex items-center justify-between gap-2">
+                <span>Etapa 1 concluída</span>
+                <button
+                  type="button"
+                  id="btn-voltar-etapa1"
+                  class="underline text-emerald-300 hover:text-white font-semibold cursor-pointer"
+                >
+                  Voltar à Etapa 1
+                </button>
+              </div>
+
+              <div>
+                <label for="input-codigo-login2" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
+                  Código de Verificação
+                </label>
+                <input
+                  id="input-codigo-login2"
+                  type="text"
+                  required
+                  autocomplete="one-time-code"
+                  placeholder="Informe o código"
+                  class="w-full px-4 py-3 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                />
+              </div>
+
+              <div>
+                <label for="input-pin-login2" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
+                  PIN de Acesso
+                </label>
+                <input
+                  id="input-pin-login2"
+                  type="password"
+                  required
+                  inputmode="numeric"
+                  placeholder="Informe o PIN"
+                  class="w-full px-4 py-3 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-sm uppercase tracking-wider hover:brightness-110 transition-all cursor-pointer"
+              >
+                Concluir Autenticação
+              </button>
+            </form>
+
+            <div
+              id="mensagem-erro-login"
+              class="hidden p-3.5 rounded-xl bg-red-950/75 border border-red-500/40 text-red-200 text-xs sm:text-sm"
+              role="alert"
+            ></div>
+          </div>
+
+          <!-- PAINEL AUTENTICADO: ADICIONAR E REMOVER VEÍCULOS -->
+          <div id="painel-gerenciar-veiculos" class="hidden space-y-6">
+            <div class="p-4 sm:p-5 rounded-2xl bg-charcoal border border-gold-500/35 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-400">
+                  Sessão Autorizada
+                </span>
+                <h3 class="font-display text-2xl font-bold uppercase text-white mt-0.5">
+                  Adicionar ou Remover Veículos da Vitrine
+                </h3>
+              </div>
+
+              <button
+                type="button"
+                id="btn-bloquear-sessao"
+                class="px-4 py-2.5 rounded-xl bg-obsidian hover:bg-red-950/80 text-zinc-200 hover:text-red-200 border border-zinc-700 hover:border-red-500/40 text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer self-start sm:self-auto"
+              >
+                Bloquear Painel
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <!-- Formulário de Cadastro -->
+              <form id="form-cadastrar-veiculo" class="lg:col-span-5 rounded-3xl bg-surface border border-zinc-800 p-6 space-y-4">
+                <h4 class="font-display text-xl font-bold uppercase text-white">Novo Veículo</h4>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="veiculo-categoria" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+                      Categoria
+                    </label>
+                    <select
+                      id="veiculo-categoria"
+                      class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white"
+                    >
+                      <option value="Popular">Popular</option>
+                      <option value="Esportivo">Esportivo</option>
+                      <option value="Caminhonete/Rural">Caminhonete/Rural</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="veiculo-origem" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+                      Estado / Eixo
+                    </label>
+                    <select
+                      id="veiculo-origem"
+                      class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white"
+                    >
+                      <option value="MT">MT</option>
+                      <option value="PR">PR</option>
+                      <option value="SP">SP</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="veiculo-modelo" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+                    Modelo / Versão
+                  </label>
+                  <input
+                    id="veiculo-modelo"
+                    type="text"
+                    required
+                    placeholder="Ex.: Toyota Hilux SRV 4x4 Diesel"
+                    class="w-full px-4 py-2.5 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                  />
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="veiculo-ano" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+                      Ano
+                    </label>
+                    <input
+                      id="veiculo-ano"
+                      type="text"
+                      required
+                      placeholder="Ex.: 2023"
+                      class="w-full px-4 py-2.5 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="veiculo-valor" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+                      Valor de Repasse
+                    </label>
+                    <input
+                      id="veiculo-valor"
+                      type="text"
+                      required
+                      placeholder="Ex.: R$ 198.000"
+                      class="w-full px-4 py-2.5 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="veiculo-obs" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+                    Detalhes e Procedência
+                  </label>
+                  <textarea
+                    id="veiculo-obs"
+                    rows="2"
+                    placeholder="Ex.: Documentação em dia, procedência verificada..."
+                    class="w-full px-4 py-2.5 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+                  ></textarea>
+                </div>
+
+                <!-- Upload / Compressão / URL / Nuvem de Fotos -->
+                <div class="space-y-3 p-4 rounded-2xl bg-charcoal border border-zinc-800">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gold-400">
+                      Fotos do Veículo
+                    </span>
+                    <span id="contador-fotos-form" class="text-[11px] text-zinc-400 font-semibold">0 foto(s)</span>
+                  </div>
+
+                  <div
+                    id="dropzone-fotos"
+                    class="border-2 border-dashed border-zinc-700 hover:border-gold-500/60 rounded-xl p-4 text-center space-y-1.5 transition-colors cursor-pointer bg-obsidian/70"
+                  >
+                    <input
+                      id="input-fotos-arquivo"
+                      type="file"
+                      accept="image/*"
+                      multiple
+                      class="hidden"
+                    />
+                    <p class="text-xs font-semibold text-zinc-200">
+                      Arraste fotos aqui ou clique para enviar
+                    </p>
+                    <p class="text-[11px] text-zinc-400">
+                      Compressão automática via Canvas para carregamento rápido.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col sm:flex-row gap-2">
+                    <input
+                      id="input-foto-url"
+                      type="url"
+                      placeholder="URL da imagem (https://...)"
+                      class="flex-1 px-3.5 py-2 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-xs text-white placeholder-zinc-500"
+                    />
+                    <button
+                      type="button"
+                      id="btn-adicionar-foto-url"
+                      class="px-4 py-2 rounded-xl bg-surface hover:bg-zinc-800 border border-gold-500/40 text-gold-300 font-bold text-xs uppercase tracking-wider cursor-pointer shrink-0"
+                    >
+                      Adicionar URL
+                    </button>
+                  </div>
+
+                  <div id="preview-fotos-veiculo" class="grid grid-cols-3 gap-2.5"></div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-xs sm:text-sm uppercase tracking-wider hover:brightness-110 transition-all cursor-pointer"
+                >
+                  Salvar e Publicar Veículo
+                </button>
+
+                <div
+                  id="feedback-cadastro-veiculo"
+                  class="hidden p-3 rounded-xl bg-emerald-950/70 border border-emerald-500/40 text-emerald-200 text-xs"
+                  role="status"
+                ></div>
+              </form>
+
+              <!-- Lista Administrativa para Exclusão -->
+              <div class="lg:col-span-7 rounded-3xl bg-surface border border-zinc-800 p-6 space-y-4">
+                <h4 class="font-display text-xl font-bold uppercase text-white">Veículos Cadastrados</h4>
+                <div id="lista-admin-veiculos" class="space-y-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILARES DE PROCEDÊNCIA -->
+    <section id="pilares" class="py-14 sm:py-20 bg-charcoal border-b border-zinc-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Padrão de Negociação</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold uppercase text-white mt-1">
+            Compromisso com a Verdade
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="p-6 rounded-2xl bg-surface border border-zinc-800 space-y-2">
+            <span class="font-display text-2xl font-bold text-gold-400">01</span>
+            <h3 class="font-display text-xl font-bold uppercase text-white">Veículos Selecionados</h3>
+            <p class="text-xs sm:text-sm text-zinc-400">Oportunidades filtradas com foco em qualidade e liquidez.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-surface border border-zinc-800 space-y-2">
+            <span class="font-display text-2xl font-bold text-gold-400">02</span>
+            <h3 class="font-display text-xl font-bold uppercase text-white">Negociação Transparente</h3>
+            <p class="text-xs sm:text-sm text-zinc-400">Comunicação direta, objetiva e sem rodeios.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-surface border border-zinc-800 space-y-2">
+            <span class="font-display text-2xl font-bold text-gold-400">03</span>
+            <h3 class="font-display text-xl font-bold uppercase text-white">Procedência Garantida</h3>
+            <p class="text-xs sm:text-sm text-zinc-400">Foco em negócios seguros entre parceiros e lojistas.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-surface border border-zinc-800 space-y-2">
+            <span class="font-display text-2xl font-bold text-gold-400">04</span>
+            <h3 class="font-display text-xl font-bold uppercase text-white">Conexão MT • PR • SP</h3>
+            <p class="text-xs sm:text-sm text-zinc-400">Integração regional para acelerar repasses e compras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONEXÃO MT • PR • SP -->
+    <section id="conexao-estados" class="py-14 sm:py-20 bg-obsidian">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Rota de Negócios</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold uppercase text-white leading-tight">
+            Integração Direta Entre <span class="text-gold-400">MT • PR • SP</span>
+          </h2>
+          <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+            Fale diretamente no WhatsApp <strong class="text-white">(66) 99987-0146</strong> para acompanhar repasses, consultar disponibilidade e negociar veículos populares, esportivos e rurais.
+          </p>
+          <div class="flex flex-wrap gap-3 pt-1">
+            <span class="px-4 py-2 rounded-xl bg-surface border border-gold-500/35 text-gold-300 font-bold text-xs uppercase">Mato Grosso (MT)</span>
+            <span class="px-4 py-2 rounded-xl bg-surface border border-gold-500/35 text-gold-300 font-bold text-xs uppercase">Paraná (PR)</span>
+            <span class="px-4 py-2 rounded-xl bg-surface border border-gold-500/35 text-gold-300 font-bold text-xs uppercase">São Paulo (SP)</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 rounded-3xl bg-surface border border-gold-500/35 p-6 sm:p-8 gold-border-glow space-y-4">
+          <h3 class="font-display text-2xl font-bold uppercase text-white">WhatsApp (66) 99987-0146</h3>
+          <p class="text-xs sm:text-sm text-zinc-400">
+            Atendimento direto sem intermediários para MT, PR e SP.
+          </p>
+          <a
+            href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20quero%20negociar%20com%20o%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+            target="_blank"
+            rel="noopener noreferrer"
+            data-whatsapp-action="conexao-chamar"
+            class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-sm uppercase tracking-wider hover:brightness-110 transition-all text-center block shadow-lg shadow-gold-500/20"
+          >
+            Chamar (66) 99987-0146
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-charcoal border-t border-zinc-800/80 py-7">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left text-xs text-zinc-400">
+      <p class="font-display text-base font-bold uppercase tracking-wider text-white">
+        Brasil <span class="text-gold-400">Repasses</span> • <span class="text-zinc-400 font-sans font-normal">MT • PR • SP • (66) 99987-0146</span>
+      </p>
+      <p>© <span id="ano-rodape">2026</span> Brasil Repasses. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL DE CONSULTA DIRETA NO WHATSAPP (66) 99987-0146 -->
+  <div
+    id="modal-whatsapp"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-whatsapp-titulo"
+  >
+    <div class="w-full max-w-md rounded-3xl bg-surface border border-gold-500/40 p-6 sm:p-7 shadow-2xl relative space-y-5">
+      <button
+        id="btn-fechar-modal"
+        type="button"
+        aria-label="Fechar janela"
+        class="w-9 h-9 rounded-full bg-zinc-800 hover:bg-zinc-700 text-zinc-300 flex items-center justify-center transition-colors cursor-pointer"
+        style="position: absolute; top: 1.25rem; right: 1.25rem;"
+      >
+        ✕
+      </button>
+
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Brasil Repasses • (66) 99987-0146</span>
+        <h3 id="modal-whatsapp-titulo" class="font-display text-2xl sm:text-3xl font-bold uppercase text-white mt-1">
+          Falar no WhatsApp
+        </h3>
+        <p class="text-xs sm:text-sm text-zinc-400 mt-1">
+          Monte sua mensagem e abra a conversa direta com <strong class="text-zinc-200">(66) 99987-0146</strong>.
+        </p>
+      </div>
+
+      <form id="form-modal-whatsapp" class="space-y-4">
+        <div>
+          <label for="modal-input-nome" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+            Seu Nome
+          </label>
+          <input
+            id="modal-input-nome"
+            type="text"
+            required
+            placeholder="Digite seu nome"
+            class="w-full px-4 py-3 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white placeholder-zinc-500"
+          />
+        </div>
+
+        <div>
+          <label for="modal-select-categoria" class="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1">
+            Categoria de Interesse
+          </label>
+          <select
+            id="modal-select-categoria"
+            class="w-full px-4 py-3 rounded-xl bg-obsidian border border-zinc-700 focus:border-gold-400 focus:outline-none text-sm text-white"
+          >
+            <option value="Atendimento Geral">Atendimento Geral</option>
+            <option value="Popular">Popular</option>
+            <option value="Esportivo">Esportivo</option>
+            <option value="Caminhonete/Rural">Caminhonete/Rural</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-sm uppercase tracking-wider hover:brightness-110 transition-all cursor-pointer"
+        >
+          Abrir WhatsApp (66) 99987-0146
+        </button>
+
+        <!-- Link nativo direto + fallback visível para cópia e abertura imediata -->
+        <div class="p-3.5 rounded-2xl bg-obsidian border border-zinc-800 space-y-2 text-xs">
+          <div class="flex items-center justify-between gap-2">
+            <a
+              id="modal-link-direto-wa"
+              href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-bold text-gold-300 hover:text-gold-200 underline"
+            >
+              Abrir WhatsApp (66) 99987-0146
+            </a>
+            <button
+              type="button"
+              data-copiar-whatsapp
+              class="px-2.5 py-1 rounded-lg bg-surface hover:bg-zinc-800 border border-gold-500/35 text-gold-300 font-bold text-[11px] uppercase cursor-pointer"
+            >
+              Copiar link
+            </button>
+          </div>
+          <a
+            id="modal-url-texto-wa"
+            href="https://wa.me/5566999870146?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Brasil%20Repasses%20(MT%20%E2%80%A2%20PR%20%E2%80%A2%20SP)."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block text-gold-400 hover:text-gold-300 underline break-all font-mono text-[11px]"
+          >
+            https://wa.me/5566999870146
+          </a>
+          <p id="status-copia-whatsapp" class="hidden text-emerald-300 text-[11px] font-medium"></p>
+        </div>
+
+        <div
+          id="modal-whatsapp-feedback"
+          class="hidden p-3.5 rounded-xl bg-obsidian border border-gold-500/40 text-xs text-zinc-200 space-y-1.5"
+          role="status"
+        ></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- APLICAÇÃO JAVASCRIPT VANILLA -->
+  <script>
+    (function () {
+      'use strict';
+
+      // Número oficial do WhatsApp: 5566999870146 ((66) 99987-0146)
+      const WHATSAPP_NUMBER = '5566999870146';
+      const WHATSAPP_FORMATTED = '(66) 99987-0146';
+
+      function montarUrlWhatsApp(mensagem) {
+        const texto = String(
+          mensagem || 'Olá, vim pelo site do Brasil Repasses (MT • PR • SP).'
+        );
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
+      }
+
+      const WHATSAPP_DEFAULT_URL = montarUrlWhatsApp(
+        'Olá, vim pelo site do Brasil Repasses (MT • PR • SP).'
+      );
+
+      // Chaves de armazenamento local e sessão
+      const STORAGE_VEICULOS_KEY = 'brasil_repasses_vehicles_v6';
+      const STORAGE_SESSAO_KEY = 'brasil_repasses_session_v6';
+
+      // Configuração opcional de Firestore REST API e Webhook de Hospedagem de Imagem
+      const FIREBASE_CONFIG = {
+        projectId: '',
+        apiKey: '',
+        collection: 'brasil_repasses_veiculos',
+      };
+
+      const CLOUD_IMAGE_UPLOAD_CONFIG = {
+        uploadUrl: '',
+        fieldName: 'file',
+        headers: {},
+      };
+
+      // Credenciais do Login em Duas Etapas (validadas internamente; nunca exibidas na UI)
+      const AUTENTICACAO_DUPLA = {
+        etapa1: {
+          usuario: 'BRASILREPASSES',
+          senha: 'BR#2026!MTPRSP',
+        },
+        etapa2: {
+          codigo: 'MTPRSP66',
+          pin: '9987',
+        },
+      };
+
+      function gerarPlaceholderSvg(titulo, subtitulo) {
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#18181d"/><stop offset="100%" stop-color="#09090b"/></linearGradient></defs><rect width="800" height="450" fill="url(#g)"/><rect x="18" y="18" width="764" height="414" rx="22" fill="none" stroke="#eab308" stroke-opacity="0.35" stroke-width="2"/><text x="400" y="205" fill="#facc15" font-family="Arial,sans-serif" font-size="34" font-weight="bold" text-anchor="middle">${escaparTexto(titulo)}</text><text x="400" y="250" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="20" text-anchor="middle">${escaparTexto(subtitulo)}</text></svg>`;
+        return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+      }
+
+      // Veículos iniciais da vitrine
+      const VEICULOS_INICIAIS = [
+        {
+          id: 'veh-hilux-mt',
+          categoria: 'Caminhonete/Rural',
+          modelo: 'Toyota Hilux SRV 4x4 Diesel',
+          ano: '2022',
+          valor: 'R$ 192.000',
+          origem: 'MT',
+          observacao: 'Procedência verificada, tração 4x4 e ótimo giro no eixo MT • PR • SP.',
+          fotos: [gerarPlaceholderSvg('HILUX SRV 4X4 • MT', 'Caminhonete / Rural • Brasil Repasses')],
+        },
+        {
+          id: 'veh-mustang-sp',
+          categoria: 'Esportivo',
+          modelo: 'Ford Mustang GT V8',
+          ano: '2021',
+          valor: 'R$ 345.000',
+          origem: 'SP',
+          observacao: 'Alto desempenho, documentação em dia e negociação transparente.',
+          fotos: [gerarPlaceholderSvg('MUSTANG GT V8 • SP', 'Esportivo • Conexão MT • PR • SP')],
+        },
+        {
+          id: 'veh-onix-pr',
+          categoria: 'Popular',
+          modelo: 'Chevrolet Onix Plus LTZ 1.0 Turbo',
+          ano: '2023',
+          valor: 'R$ 68.900',
+          origem: 'PR',
+          observacao: 'Excelente liquidez, economia e procedência garantida.',
+          fotos: [gerarPlaceholderSvg('ONIX PLUS LTZ • PR', 'Popular • Alto Giro e Liquidez')],
+        },
+      ];
+
+      // Estado da aplicação
+      let veiculos = [];
+      let fotosRascunho = [];
+      let filtroAtual = 'Todos';
+      let etapa1Aprovada = false;
+      let painelLiberado = false;
+
+      function escaparTexto(texto) {
+        return String(texto || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function sanitizarSrcImagem(src) {
+        const valor = String(src || '').trim();
+        if (!valor) return '';
+        if (valor.startsWith('data:image/')) return valor;
+        try {
+          const parsed = new URL(valor);
+          if (parsed.protocol === 'https:' || parsed.protocol === 'http:') {
+            return parsed.toString();
+          }
+        } catch (err) {
+          return '';
+        }
+        return '';
+      }
+
+      function formatarMoeda(valor) {
+        const limpo = String(valor || '').trim();
+        if (!limpo) return 'Sob consulta';
+        return limpo.toUpperCase().startsWith('R$') ? limpo : `R$ ${limpo}`;
+      }
+
+      // Garante que todos os links wa.me apontem para 5566999870146
+      function sincronizarLinksWhatsApp() {
+        try {
+          document.querySelectorAll('a[href*="wa.me/"]').forEach((anchor) => {
+            const hrefAtual = anchor.getAttribute('href') || WHATSAPP_DEFAULT_URL;
+            const hrefNormalizado = hrefAtual.includes(`wa.me/${WHATSAPP_NUMBER}`)
+              ? hrefAtual
+              : WHATSAPP_DEFAULT_URL;
+            anchor.setAttribute('href', hrefNormalizado);
+            anchor.setAttribute('target', '_blank');
+            anchor.setAttribute('rel', 'noopener noreferrer');
+          });
+        } catch (err) {
+          // Ignora erro de DOM
+        }
+      }
+
+      // Exibe barra e caixa de contingência caso um iframe/preview/pop-up bloqueie a abertura externa
+      function exibirContingenciaWhatsApp(urlAlvo, motivoTexto) {
+        const linkFinal = urlAlvo || WHATSAPP_DEFAULT_URL;
+        try {
+          const barra = document.getElementById('fallback-barra-whatsapp');
+          const caixa = document.getElementById('fallback-caixa-whatsapp');
+          if (barra) {
+            barra.classList.remove('hidden');
+            barra.querySelectorAll('a[href*="wa.me/"]').forEach((a) => a.setAttribute('href', linkFinal));
+          }
+          if (caixa) {
+            caixa.classList.remove('hidden');
+            caixa.querySelectorAll('a[href*="wa.me/"]').forEach((a) => a.setAttribute('href', linkFinal));
+          }
+
+          const feedbackModal = document.getElementById('modal-whatsapp-feedback');
+          if (feedbackModal && motivoTexto) {
+            feedbackModal.classList.remove('hidden');
+            feedbackModal.innerHTML = `
+              <p class="font-semibold text-gold-300">${escaparTexto(motivoTexto)}</p>
+              <a href="${escaparTexto(linkFinal)}" target="_blank" rel="noopener noreferrer" class="underline font-bold text-gold-400 break-all">
+                ${escaparTexto(linkFinal)}
+              </a>
+            `;
+          }
+        } catch (err) {
+          // Ignora erro de DOM
+        }
+      }
+
+      function copiarLinkWhatsApp(urlAlvo) {
+        const textoCopiar = urlAlvo || WHATSAPP_DEFAULT_URL;
+        let copiado = false;
+        try {
+          const tempInput = document.createElement('input');
+          tempInput.value = textoCopiar;
+          tempInput.setAttribute('readonly', '');
+          tempInput.style.position = 'fixed';
+          tempInput.style.opacity = '0';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          copiado = Boolean(document.execCommand('copy'));
+          document.body.removeChild(tempInput);
+        } catch (err) {
+          copiado = false;
+        }
+
+        const msg = copiado
+          ? `Link do WhatsApp ${WHATSAPP_FORMATTED} copiado!`
+          : `Use o link direto abaixo para abrir o WhatsApp ${WHATSAPP_FORMATTED}.`;
+
+        ['status-copia-whatsapp', 'status-copia-barra', 'status-copia-caixa', 'status-copia-aba'].forEach(
+          (id) => {
+            const el = document.getElementById(id);
+            if (el) {
+              el.textContent = msg;
+              el.classList.remove('hidden');
+            }
+          }
+        );
+
+        exibirContingenciaWhatsApp(textoCopiar, '');
+      }
+
+      function configurarDeteccaoCliquesWhatsApp() {
+        const estaEmFrame = (() => {
+          try {
+            return window.self !== window.top;
+          } catch (err) {
+            return true;
+          }
+        })();
+
+        document.querySelectorAll('[data-whatsapp-action], a[href*="wa.me/"]').forEach((linkEl) => {
+          linkEl.addEventListener('click', (event) => {
+            const href = linkEl.getAttribute('href') || WHATSAPP_DEFAULT_URL;
+            if (estaEmFrame || Boolean(event && event.defaultPrevented)) {
+              exibirContingenciaWhatsApp(
+                href,
+                `Caso este preview bloqueie a abertura externa, use o link direto para ${WHATSAPP_FORMATTED} ou clique em "Copiar link":`
+              );
+            }
+          });
+        });
+
+        document.querySelectorAll('[data-copiar-whatsapp]').forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const linkAtivo =
+              document.getElementById('modal-link-direto-wa')?.getAttribute('href') ||
+              WHATSAPP_DEFAULT_URL;
+            copiarLinkWhatsApp(linkAtivo);
+          });
+        });
+
+        const btnFecharBarra = document.getElementById('btn-fechar-fallback-barra');
+        if (btnFecharBarra) {
+          btnFecharBarra.addEventListener('click', () => {
+            const barra = document.getElementById('fallback-barra-whatsapp');
+            if (barra) barra.classList.add('hidden');
+          });
+        }
+      }
+
+      function abrirUrlWhatsAppComContingencia(urlAlvo, motivoTexto) {
+        const linkFinal = urlAlvo || WHATSAPP_DEFAULT_URL;
+        try {
+          const anchorTemp = document.createElement('a');
+          anchorTemp.href = linkFinal;
+          anchorTemp.target = '_blank';
+          anchorTemp.rel = 'noopener noreferrer';
+          document.body.appendChild(anchorTemp);
+          anchorTemp.click();
+          document.body.removeChild(anchorTemp);
+        } catch (err) {
+          // Segue para exibição da contingência
+        }
+
+        exibirContingenciaWhatsApp(
+          linkFinal,
+          motivoTexto ||
+            `Se a nova aba não abriu automaticamente neste preview, clique no link abaixo para falar com ${WHATSAPP_FORMATTED}:`
+        );
+      }
+
+      // Carrega e salva veículos com fallback resiliente em localStorage
+      function carregarVeiculos() {
+        try {
+          const bruto = window.localStorage ? window.localStorage.getItem(STORAGE_VEICULOS_KEY) : null;
+          if (bruto) {
+            const lista = JSON.parse(bruto);
+            if (Array.isArray(lista) && lista.length > 0) {
+              veiculos = lista.map((item) =>
+                Object.assign({}, item, {
+                  fotos: Array.isArray(item.fotos)
+                    ? item.fotos.map(sanitizarSrcImagem).filter(Boolean)
+                    : [],
+                })
+              );
+              return;
+            }
+          }
+        } catch (err) {
+          // Usa veículos iniciais em caso de erro
+        }
+        veiculos = VEICULOS_INICIAIS.map((item) => Object.assign({}, item, { fotos: item.fotos.slice() }));
+      }
+
+      function salvarVeiculosLocal() {
+        try {
+          if (!window.localStorage) return;
+          window.localStorage.setItem(STORAGE_VEICULOS_KEY, JSON.stringify(veiculos));
+        } catch (err) {
+          try {
+            const versaoCompacta = veiculos.map((v) =>
+              Object.assign({}, v, { fotos: (v.fotos || []).slice(0, 2) })
+            );
+            window.localStorage.setItem(STORAGE_VEICULOS_KEY, JSON.stringify(versaoCompacta));
+          } catch (innerErr) {
+            // Ignora erro de cota
+          }
+        }
+      }
+
+      // Sincronização opcional via Firestore REST API se configurado
+      async function sincronizarFirestore(acao, veiculoOuId) {
+        const temConfig =
+          FIREBASE_CONFIG.projectId &&
+          FIREBASE_CONFIG.projectId.trim().length > 0 &&
+          FIREBASE_CONFIG.apiKey &&
+          FIREBASE_CONFIG.apiKey.trim().length > 0;
+
+        if (!temConfig) return;
+
+        const baseUrl = `https://firestore.googleapis.com/v1/projects/${encodeURIComponent(
+          FIREBASE_CONFIG.projectId.trim()
+        )}/databases/(default)/documents/${encodeURIComponent(FIREBASE_CONFIG.collection)}`;
+        const keyQuery = `?key=${encodeURIComponent(FIREBASE_CONFIG.apiKey.trim())}`;
+
+        try {
+          if (acao === 'upsert' && veiculoOuId && veiculoOuId.id) {
+            const docUrl = `${baseUrl}/${encodeURIComponent(veiculoOuId.id)}${keyQuery}`;
+            await fetch(docUrl, {
+              method: 'PATCH',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                fields: {
+                  categoria: { stringValue: String(veiculoOuId.categoria || '') },
+                  modelo: { stringValue: String(veiculoOuId.modelo || '') },
+                  ano: { stringValue: String(veiculoOuId.ano || '') },
+                  valor: { stringValue: String(veiculoOuId.valor || '') },
+                  origem: { stringValue: String(veiculoOuId.origem || '') },
+                  observacao: { stringValue: String(veiculoOuId.observacao || '') },
+                  fotos: {
+                    arrayValue: {
+                      values: (veiculoOuId.fotos || []).map((f) => ({ stringValue: String(f) })),
+                    },
+                  },
+                },
+              }),
+            });
+          } else if (acao === 'delete' && typeof veiculoOuId === 'string') {
+            const docUrl = `${baseUrl}/${encodeURIComponent(veiculoOuId)}${keyQuery}`;
+            await fetch(docUrl, { method: 'DELETE' });
+          }
+        } catch (err) {
+          // Mantém dados locais sem interromper o fluxo
+        }
+      }
+
+      // Compressão de imagens via Canvas
+      function comprimirArquivoImagem(arquivo, maxLargura, qualidade) {
+        return new Promise((resolve, reject) => {
+          try {
+            if (!arquivo || !arquivo.type || !arquivo.type.startsWith('image/')) {
+              reject(new Error('Arquivo inválido.'));
+              return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (event) {
+              const img = new Image();
+              img.onload = function () {
+                try {
+                  let largura = img.naturalWidth || img.width || 800;
+                  let altura = img.naturalHeight || img.height || 600;
+                  const limite = maxLargura || 900;
+
+                  if (largura > limite) {
+                    const proporcao = limite / largura;
+                    largura = limite;
+                    altura = Math.max(1, Math.round(altura * proporcao));
+                  }
+
+                  const canvas = document.createElement('canvas');
+                  canvas.width = largura;
+                  canvas.height = altura;
+
+                  const ctx = canvas.getContext('2d');
+                  if (!ctx) {
+                    reject(new Error('Canvas indisponível.'));
+                    return;
+                  }
+
+                  ctx.drawImage(img, 0, 0, largura, altura);
+                  resolve(canvas.toDataURL('image/jpeg', qualidade || 0.76));
+                } catch (canvasErr) {
+                  reject(canvasErr);
+                }
+              };
+              img.onerror = function () {
+                reject(new Error('Falha ao carregar imagem.'));
+              };
+              img.src = String(event.target && event.target.result ? event.target.result : '');
+            };
+            reader.onerror = function () {
+              reject(new Error('Falha ao ler arquivo.'));
+            };
+            reader.readAsDataURL(arquivo);
+          } catch (err) {
+            reject(err);
+          }
+        });
+      }
+
+      // Envio opcional para webhook/nuvem de imagens com fallback automático para Data URL comprimido
+      async function hospedarOuPrepararFoto(dataUrlComprimida, arquivoOriginal) {
+        const endpoint = CLOUD_IMAGE_UPLOAD_CONFIG.uploadUrl && CLOUD_IMAGE_UPLOAD_CONFIG.uploadUrl.trim();
+        if (!endpoint) {
+          return dataUrlComprimida;
+        }
+
+        try {
+          const blob = await (await fetch(dataUrlComprimida)).blob();
+          const formData = new FormData();
+          const nomeArquivo = arquivoOriginal && arquivoOriginal.name ? arquivoOriginal.name : 'veiculo.jpg';
+          formData.append(CLOUD_IMAGE_UPLOAD_CONFIG.fieldName || 'file', blob, nomeArquivo);
+
+          const resposta = await fetch(endpoint, {
+            method: 'POST',
+            headers: CLOUD_IMAGE_UPLOAD_CONFIG.headers || {},
+            body: formData,
+          });
+
+          if (resposta.ok) {
+            const dados = await resposta.json();
+            const urlNuvem = sanitizarSrcImagem(
+              dados && (dados.url || dados.secure_url || (dados.data && dados.data.url))
+            );
+            if (urlNuvem) return urlNuvem;
+          }
+        } catch (err) {
+          // Usa Data URL comprimido como fallback
+        }
+
+        return dataUrlComprimida;
+      }
+
+      function renderizarPreviewFotos() {
+        const container = document.getElementById('preview-fotos-veiculo');
+        const contador = document.getElementById('contador-fotos-form');
+        if (contador) {
+          contador.textContent = `${fotosRascunho.length} foto(s)`;
+        }
+        if (!container) return;
+
+        container.innerHTML = '';
+        fotosRascunho.forEach((fotoSrc, indice) => {
+          const srcSeguro = sanitizarSrcImagem(fotoSrc);
+          if (!srcSeguro) return;
+
+          const card = document.createElement('div');
+          card.className = 'relative rounded-xl overflow-hidden border border-zinc-700 bg-obsidian aspect-video';
+          card.innerHTML = `
+            <img src="${srcSeguro}" alt="Foto ${indice + 1} do veículo" class="w-full h-full object-cover" />
+            <button
+              type="button"
+              data-remove-foto="${indice}"
+              aria-label="Remover foto ${indice + 1}"
+              class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-black/80 hover:bg-red-700 text-white text-xs flex items-center justify-center cursor-pointer"
+            >
+              ✕
+            </button>
+          `;
+          container.appendChild(card);
+        });
+
+        container.querySelectorAll('[data-remove-foto]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const idx = Number(btn.getAttribute('data-remove-foto'));
+            if (!Number.isNaN(idx)) {
+              fotosRascunho.splice(idx, 1);
+              renderizarPreviewFotos();
+            }
+          });
+        });
+      }
+
+      async function processarArquivosFotos(listaArquivos) {
+        const feedback = document.getElementById('feedback-cadastro-veiculo');
+        const arquivos = Array.from(listaArquivos || []);
+        if (arquivos.length === 0) return;
+
+        for (let i = 0; i < arquivos.length; i += 1) {
+          if (fotosRascunho.length >= 6) break;
+          try {
+            const comprimida = await comprimirArquivoImagem(arquivos[i], 900, 0.76);
+            const hospedada = await hospedarOuPrepararFoto(comprimida, arquivos[i]);
+            const srcValido = sanitizarSrcImagem(hospedada);
+            if (srcValido) {
+              fotosRascunho.push(srcValido);
+            }
+          } catch (err) {
+            if (feedback) {
+              feedback.classList.remove('hidden');
+              feedback.textContent = 'Uma imagem inválida foi ignorada.';
+            }
+          }
+        }
+
+        renderizarPreviewFotos();
+      }
+
+      // Sessão do login duplo
+      function carregarSessao() {
+        try {
+          const bruto = window.localStorage ? window.localStorage.getItem(STORAGE_SESSAO_KEY) : null;
+          if (!bruto) return;
+          const dados = JSON.parse(bruto);
+          if (dados && dados.liberado === true) {
+            etapa1Aprovada = true;
+            painelLiberado = true;
+          }
+        } catch (err) {
+          painelLiberado = false;
+        }
+      }
+
+      function persistirSessao(liberado) {
+        try {
+          if (!window.localStorage) return;
+          if (liberado) {
+            window.localStorage.setItem(STORAGE_SESSAO_KEY, JSON.stringify({ liberado: true }));
+          } else {
+            window.localStorage.removeItem(STORAGE_SESSAO_KEY);
+          }
+        } catch (err) {
+          // Ignora erro de storage
+        }
+      }
+
+      function atualizarBadgeStorage() {
+        const badge = document.getElementById('status-storage-badge');
+        if (!badge) return;
+        const temFirestore =
+          FIREBASE_CONFIG.projectId &&
+          FIREBASE_CONFIG.projectId.trim().length > 0 &&
+          FIREBASE_CONFIG.apiKey &&
+          FIREBASE_CONFIG.apiKey.trim().length > 0;
+        const temNuvemFoto =
+          CLOUD_IMAGE_UPLOAD_CONFIG.uploadUrl &&
+          CLOUD_IMAGE_UPLOAD_CONFIG.uploadUrl.trim().length > 0;
+
+        if (temFirestore || temNuvemFoto) {
+          badge.textContent = 'Nuvem + LocalStorage Ativos';
+          badge.className =
+            'px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/40 font-bold uppercase tracking-wider self-start sm:self-auto';
+        } else {
+          badge.textContent = 'LocalStorage + Compressão Ativos';
+          badge.className =
+            'px-3 py-1 rounded-full bg-surface text-gold-300 border border-gold-500/35 font-bold uppercase tracking-wider self-start sm:self-auto';
+        }
+      }
+
+      // Vitrine pública com filtros e fotos
+      function renderizarVitrine() {
+        const grid = document.getElementById('grid-veiculos');
+        const vazia = document.getElementById('vitrine-vazia');
+        const contador = document.getElementById('contador-vitrine');
+
+        if (contador) {
+          contador.textContent = String(veiculos.length);
+        }
+
+        if (!grid) return;
+
+        const filtrados =
+          filtroAtual === 'Todos'
+            ? veiculos
+            : veiculos.filter((item) => item.categoria === filtroAtual);
+
+        grid.innerHTML = '';
+
+        if (filtrados.length === 0) {
+          if (vazia) vazia.classList.remove('hidden');
+          return;
+        }
+
+        if (vazia) vazia.classList.add('hidden');
+
+        filtrados.forEach((item) => {
+          const card = document.createElement('article');
+          card.className =
+            'rounded-2xl bg-surface border border-zinc-800 hover:border-gold-500/45 overflow-hidden flex flex-col justify-between transition-all';
+
+          const fotosValidas = Array.isArray(item.fotos)
+            ? item.fotos.map(sanitizarSrcImagem).filter(Boolean)
+            : [];
+          const imagemPrincipal =
+            fotosValidas[0] ||
+            gerarPlaceholderSvg(item.modelo || 'Brasil Repasses', item.categoria || 'Veículo');
+          const fallbackImg = gerarPlaceholderSvg(
+            item.modelo || 'Brasil Repasses',
+            item.categoria || 'Veículo'
+          );
+
+          const miniaturasHtml =
+            fotosValidas.length > 1
+              ? `<div class="grid grid-cols-3 gap-1.5 mt-2">
+                  ${fotosValidas
+                    .slice(0, 3)
+                    .map(
+                      (f, idx) =>
+                        `<img src="${f}" alt="${escaparTexto(item.modelo)} - foto ${idx + 1}" class="w-full h-14 object-cover rounded-lg border border-zinc-700" onerror="this.onerror=null;this.src='${fallbackImg}';" />`
+                    )
+                    .join('')}
+                </div>`
+              : '';
+
+          const urlConsultaVeiculo = montarUrlWhatsApp(
+            `Olá, tenho interesse no veículo ${item.modelo} (${item.ano}) - ${item.valor} [${item.origem}] visto no Brasil Repasses.`
+          );
+
+          card.innerHTML = `
+            <div>
+              <div class="relative aspect-video bg-obsidian border-b border-zinc-800 overflow-hidden">
+                <img
+                  src="${imagemPrincipal}"
+                  alt="${escaparTexto(item.modelo)}"
+                  class="w-full h-full object-cover"
+                  onerror="this.onerror=null;this.src='${fallbackImg}';"
+                />
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-md bg-obsidian/90 border border-gold-500/40 text-gold-300 text-xs font-bold uppercase tracking-wider">
+                  ${escaparTexto(item.categoria)}
+                </span>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-obsidian/90 border border-zinc-700 text-zinc-100 text-xs font-bold">
+                  ${escaparTexto(item.origem)} • ${escaparTexto(item.ano)}
+                </span>
+              </div>
+
+              <div class="p-6 space-y-3">
+                ${miniaturasHtml}
+
+                <h3 class="font-display text-2xl font-bold uppercase text-white leading-snug">
+                  ${escaparTexto(item.modelo)}
+                </h3>
+
+                <p class="font-display text-2xl font-bold text-gold-400">
+                  ${escaparTexto(item.valor)}
+                </p>
+
+                <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+                  ${escaparTexto(item.observacao || 'Veículo em negociação no Brasil Repasses.')}
+                </p>
+              </div>
+            </div>
+
+            <div class="px-6 pb-6 pt-3 border-t border-zinc-800/80">
+              <a
+                href="${escaparTexto(urlConsultaVeiculo)}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian font-extrabold text-xs uppercase tracking-wider hover:brightness-110 transition-all text-center block"
+              >
+                Consultar no WhatsApp
+              </a>
+            </div>
+          `;
+
+          grid.appendChild(card);
+        });
+      }
+
+      function excluirVeiculo(id) {
+        if (!painelLiberado || !id) return;
+        veiculos = veiculos.filter((item) => item.id !== id);
+        salvarVeiculosLocal();
+        sincronizarFirestore('delete', id);
+        renderizarVitrine();
+        renderizarListaAdmin();
+      }
+
+      function renderizarListaAdmin() {
+        const listaEl = document.getElementById('lista-admin-veiculos');
+        if (!listaEl || !painelLiberado) return;
+
+        listaEl.innerHTML = '';
+
+        if (veiculos.length === 0) {
+          listaEl.innerHTML = '<p class="text-xs text-zinc-400">Nenhum veículo cadastrado no momento.</p>';
+          return;
+        }
+
+        veiculos.forEach((item) => {
+          const totalFotos = Array.isArray(item.fotos) ? item.fotos.length : 0;
+          const row = document.createElement('div');
+          row.className = 'p-4 rounded-2xl bg-charcoal border border-zinc-800 flex items-start justify-between gap-3';
+          row.innerHTML = `
+            <div class="space-y-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-gold-400">
+                ${escaparTexto(item.categoria)} • ${escaparTexto(item.origem)} • ${totalFotos} foto(s)
+              </span>
+              <p class="font-bold text-sm text-white">${escaparTexto(item.modelo)} (${escaparTexto(item.ano)})</p>
+              <p class="text-xs font-semibold text-zinc-300">${escaparTexto(item.valor)}</p>
+            </div>
+            <button
+              type="button"
+              data-remove-id="${escaparTexto(item.id)}"
+              class="px-3 py-1.5 rounded-lg bg-obsidian hover:bg-red-950 text-zinc-300 hover:text-red-200 border border-zinc-700 hover:border-red-500/40 text-xs font-semibold transition-colors cursor-pointer shrink-0"
+            >
+              Remover
+            </button>
+          `;
+          listaEl.appendChild(row);
+        });
+
+        listaEl.querySelectorAll('[data-remove-id]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            excluirVeiculo(btn.getAttribute('data-remove-id'));
+          });
+        });
+      }
+
+      function configurarAbas() {
+        const btnVitrine = document.getElementById('tab-btn-vitrine');
+        const btnWhatsapp = document.getElementById('tab-btn-whatsapp');
+        const btnRestrito = document.getElementById('tab-btn-restrito');
+        const panelVitrine = document.getElementById('tab-panel-vitrine');
+        const panelWhatsapp = document.getElementById('tab-panel-whatsapp');
+        const panelRestrito = document.getElementById('tab-panel-restrito');
+
+        function selecionarAba(alvo) {
+          const ehRestrito = alvo === 'tab-panel-restrito';
+          const ehWhatsapp = alvo === 'tab-panel-whatsapp';
+          const ehVitrine = !ehRestrito && !ehWhatsapp;
+
+          if (panelVitrine) panelVitrine.classList.toggle('hidden', !ehVitrine);
+          if (panelWhatsapp) panelWhatsapp.classList.toggle('hidden', !ehWhatsapp);
+          if (panelRestrito) panelRestrito.classList.toggle('hidden', !ehRestrito);
+
+          if (btnVitrine) {
+            btnVitrine.setAttribute('aria-selected', String(ehVitrine));
+            btnVitrine.className = ehVitrine
+              ? 'px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian shadow-md shadow-gold-500/20 transition-all cursor-pointer'
+              : 'px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-200 border border-zinc-700 transition-all cursor-pointer';
+          }
+
+          if (btnWhatsapp) {
+            btnWhatsapp.setAttribute('aria-selected', String(ehWhatsapp));
+            btnWhatsapp.className = ehWhatsapp
+              ? 'px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian shadow-md shadow-gold-500/20 transition-all cursor-pointer inline-flex items-center gap-1.5'
+              : 'px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-surface hover:bg-zinc-800 text-gold-300 border border-gold-500/40 transition-all cursor-pointer inline-flex items-center gap-1.5';
+          }
+
+          if (btnRestrito) {
+            btnRestrito.setAttribute('aria-selected', String(ehRestrito));
+            btnRestrito.className = ehRestrito
+              ? 'px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-obsidian shadow-md shadow-gold-500/20 transition-all cursor-pointer inline-flex items-center gap-2'
+              : 'px-5 py-3 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-200 border border-zinc-700 transition-all cursor-pointer inline-flex items-center gap-2';
+          }
+        }
+
+        if (btnVitrine) btnVitrine.addEventListener('click', () => selecionarAba('tab-panel-vitrine'));
+        if (btnWhatsapp) btnWhatsapp.addEventListener('click', () => selecionarAba('tab-panel-whatsapp'));
+        if (btnRestrito) btnRestrito.addEventListener('click', () => selecionarAba('tab-panel-restrito'));
+      }
+
+      function configurarFiltros() {
+        const botoes = document.querySelectorAll('.filtro-btn');
+        botoes.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            filtroAtual = btn.getAttribute('data-filtro') || 'Todos';
+            botoes.forEach((b) => {
+              const ativo = b.getAttribute('data-filtro') === filtroAtual;
+              b.className = ativo
+                ? 'filtro-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-gold-500 text-obsidian cursor-pointer transition-colors'
+                : 'filtro-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-surface hover:bg-zinc-800 text-zinc-300 border border-zinc-700 cursor-pointer transition-colors';
+            });
+            renderizarVitrine();
+          });
+        });
+      }
+
+      function atualizarInterfaceLogin() {
+        const badgeCadeado = document.getElementById('badge-cadeado');
+        const painelLogin = document.getElementById('painel-login-duplo');
+        const painelGerenciar = document.getElementById('painel-gerenciar-veiculos');
+        const formEtapa1 = document.getElementById('form-etapa-1');
+        const formEtapa2 = document.getElementById('form-etapa-2');
+        const cardEtapa1 = document.getElementById('etapa-card-1');
+        const cardEtapa2 = document.getElementById('etapa-card-2');
+
+        if (badgeCadeado) {
+          if (painelLiberado) {
+            badgeCadeado.textContent = 'LIBERADO';
+            badgeCadeado.className =
+              'px-2 py-0.5 rounded bg-emerald-950 text-[10px] text-emerald-300 border border-emerald-500/40';
+          } else {
+            badgeCadeado.textContent = 'BLOQUEADO';
+            badgeCadeado.className =
+              'px-2 py-0.5 rounded bg-obsidian text-[10px] text-gold-400 border border-gold-500/30';
+          }
+        }
+
+        if (painelLiberado) {
+          if (painelLogin) painelLogin.classList.add('hidden');
+          if (painelGerenciar) painelGerenciar.classList.remove('hidden');
+          renderizarListaAdmin();
+          renderizarPreviewFotos();
+          return;
+        }
+
+        if (painelLogin) painelLogin.classList.remove('hidden');
+        if (painelGerenciar) painelGerenciar.classList.add('hidden');
+
+        if (etapa1Aprovada) {
+          if (formEtapa1) formEtapa1.classList.add('hidden');
+          if (formEtapa2) formEtapa2.classList.remove('hidden');
+          if (cardEtapa1) cardEtapa1.className = 'p-3.5 rounded-2xl bg-emerald-950/50 border border-emerald-500/40';
+          if (cardEtapa2) cardEtapa2.className = 'p-3.5 rounded-2xl bg-gold-500/15 border border-gold-500/50';
+        } else {
+          if (formEtapa1) formEtapa1.classList.remove('hidden');
+          if (formEtapa2) formEtapa2.classList.add('hidden');
+          if (cardEtapa1) cardEtapa1.className = 'p-3.5 rounded-2xl bg-gold-500/15 border border-gold-500/50';
+          if (cardEtapa2) cardEtapa2.className = 'p-3.5 rounded-2xl bg-obsidian border border-zinc-800 opacity-65';
+        }
+      }
+
+      function configurarLoginECadastro() {
+        const erroBox = document.getElementById('mensagem-erro-login');
+        const formEtapa1 = document.getElementById('form-etapa-1');
+        const formEtapa2 = document.getElementById('form-etapa-2');
+        const btnVoltar1 = document.getElementById('btn-voltar-etapa1');
+        const btnBloquear = document.getElementById('btn-bloquear-sessao');
+        const formCadastro = document.getElementById('form-cadastrar-veiculo');
+        const feedbackCadastro = document.getElementById('feedback-cadastro-veiculo');
+        const dropzone = document.getElementById('dropzone-fotos');
+        const inputArquivo = document.getElementById('input-fotos-arquivo');
+        const inputFotoUrl = document.getElementById('input-foto-url');
+        const btnAddFotoUrl = document.getElementById('btn-adicionar-foto-url');
+
+        function mostrarErro(msg) {
+          if (!erroBox) return;
+          erroBox.textContent = msg;
+          erroBox.classList.remove('hidden');
+        }
+
+        function limparErro() {
+          if (!erroBox) return;
+          erroBox.textContent = '';
+          erroBox.classList.add('hidden');
+        }
+
+        if (dropzone && inputArquivo) {
+          dropzone.addEventListener('click', () => {
+            inputArquivo.click();
+          });
+
+          inputArquivo.addEventListener('change', async (e) => {
+            await processarArquivosFotos(e.target && e.target.files);
+            inputArquivo.value = '';
+          });
+
+          ['dragenter', 'dragover'].forEach((evt) => {
+            dropzone.addEventListener(evt, (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              dropzone.classList.add('dropzone-active');
+            });
+          });
+
+          ['dragleave', 'drop'].forEach((evt) => {
+            dropzone.addEventListener(evt, (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              dropzone.classList.remove('dropzone-active');
+            });
+          });
+
+          dropzone.addEventListener('drop', async (e) => {
+            const dt = e.dataTransfer;
+            await processarArquivosFotos(dt && dt.files);
+          });
+        }
+
+        if (btnAddFotoUrl && inputFotoUrl) {
+          btnAddFotoUrl.addEventListener('click', () => {
+            const urlLimpa = sanitizarSrcImagem(inputFotoUrl.value);
+            if (!urlLimpa) {
+              if (feedbackCadastro) {
+                feedbackCadastro.classList.remove('hidden');
+                feedbackCadastro.textContent = 'Informe uma URL de imagem válida (https:// ou http://).';
+              }
+              return;
+            }
+            if (fotosRascunho.length >= 6) {
+              if (feedbackCadastro) {
+                feedbackCadastro.classList.remove('hidden');
+                feedbackCadastro.textContent = 'Limite de 6 fotos por veículo atingido.';
+              }
+              return;
+            }
+            fotosRascunho.push(urlLimpa);
+            inputFotoUrl.value = '';
+            renderizarPreviewFotos();
+          });
+        }
+
+        if (formEtapa1) {
+          formEtapa1.addEventListener('submit', (e) => {
+            e.preventDefault();
+            limparErro();
+
+            const uInput = document.getElementById('input-usuario-login1');
+            const sInput = document.getElementById('input-senha-login1');
+            const usuarioDigitado = uInput ? uInput.value.trim().toUpperCase() : '';
+            const senhaDigitada = sInput ? sInput.value.trim() : '';
+
+            if (
+              usuarioDigitado === AUTENTICACAO_DUPLA.etapa1.usuario &&
+              senhaDigitada === AUTENTICACAO_DUPLA.etapa1.senha
+            ) {
+              etapa1Aprovada = true;
+              atualizarInterfaceLogin();
+            } else {
+              mostrarErro('Credenciais inválidas na Etapa 1.');
+            }
+          });
+        }
+
+        if (btnVoltar1) {
+          btnVoltar1.addEventListener('click', () => {
+            etapa1Aprovada = false;
+            limparErro();
+            atualizarInterfaceLogin();
+          });
+        }
+
+        if (formEtapa2) {
+          formEtapa2.addEventListener('submit', (e) => {
+            e.preventDefault();
+            limparErro();
+
+            if (!etapa1Aprovada) {
+              mostrarErro('Conclua a Etapa 1 primeiro.');
+              return;
+            }
+
+            const cInput = document.getElementById('input-codigo-login2');
+            const pInput = document.getElementById('input-pin-login2');
+            const codigoDigitado = cInput ? cInput.value.trim().toUpperCase() : '';
+            const pinDigitado = pInput ? pInput.value.trim() : '';
+
+            if (
+              codigoDigitado === AUTENTICACAO_DUPLA.etapa2.codigo &&
+              pinDigitado === AUTENTICACAO_DUPLA.etapa2.pin
+            ) {
+              painelLiberado = true;
+              persistirSessao(true);
+              if (formEtapa1) formEtapa1.reset();
+              if (formEtapa2) formEtapa2.reset();
+              atualizarInterfaceLogin();
+            } else {
+              mostrarErro('Código ou PIN inválido na Etapa 2.');
+            }
+          });
+        }
+
+        if (btnBloquear) {
+          btnBloquear.addEventListener('click', () => {
+            etapa1Aprovada = false;
+            painelLiberado = false;
+            persistirSessao(false);
+            limparErro();
+            atualizarInterfaceLogin();
+          });
+        }
+
+        if (formCadastro) {
+          formCadastro.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!painelLiberado) return;
+
+            try {
+              const catEl = document.getElementById('veiculo-categoria');
+              const origEl = document.getElementById('veiculo-origem');
+              const modEl = document.getElementById('veiculo-modelo');
+              const anoEl = document.getElementById('veiculo-ano');
+              const valEl = document.getElementById('veiculo-valor');
+              const obsEl = document.getElementById('veiculo-obs');
+
+              const modelo = modEl ? modEl.value.trim() : '';
+              if (!modelo) return;
+
+              const novoVeiculo = {
+                id: 'veh-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+                categoria: catEl ? catEl.value : 'Popular',
+                origem: origEl ? origEl.value : 'MT',
+                modelo: modelo,
+                ano: anoEl ? anoEl.value.trim() : '',
+                valor: formatarMoeda(valEl ? valEl.value : ''),
+                observacao: obsEl ? obsEl.value.trim() : '',
+                fotos: fotosRascunho.slice(),
+              };
+
+              veiculos.unshift(novoVeiculo);
+              salvarVeiculosLocal();
+              sincronizarFirestore('upsert', novoVeiculo);
+              renderizarVitrine();
+              renderizarListaAdmin();
+              formCadastro.reset();
+              fotosRascunho = [];
+              renderizarPreviewFotos();
+
+              if (feedbackCadastro) {
+                feedbackCadastro.classList.remove('hidden');
+                feedbackCadastro.textContent = `Veículo "${novoVeiculo.modelo}" publicado com ${novoVeiculo.fotos.length} foto(s).`;
+              }
+            } catch (err) {
+              if (feedbackCadastro) {
+                feedbackCadastro.classList.remove('hidden');
+                feedbackCadastro.textContent = 'Não foi possível salvar o veículo.';
+              }
+            }
+          });
+        }
+      }
+
+      function configurarModalWhatsApp() {
+        const modal = document.getElementById('modal-whatsapp');
+        const fecharBtn = document.getElementById('btn-fechar-modal');
+        const abridores = document.querySelectorAll('[data-open-modal]');
+        const selectCat = document.getElementById('modal-select-categoria');
+        const formModal = document.getElementById('form-modal-whatsapp');
+        const feedbackModal = document.getElementById('modal-whatsapp-feedback');
+        const linkDiretoWa = document.getElementById('modal-link-direto-wa');
+        const urlTextoWa = document.getElementById('modal-url-texto-wa');
+
+        function atualizarLinksModal(urlNova) {
+          if (linkDiretoWa) linkDiretoWa.setAttribute('href', urlNova);
+          if (urlTextoWa) {
+            urlTextoWa.setAttribute('href', urlNova);
+            urlTextoWa.textContent = urlNova;
+          }
+        }
+
+        function abrir(categoria) {
+          if (!modal) return;
+          if (categoria && selectCat) {
+            const existe = Array.from(selectCat.options).some((opt) => opt.value === categoria);
+            if (existe) selectCat.value = categoria;
+          }
+          atualizarLinksModal(WHATSAPP_DEFAULT_URL);
+          if (feedbackModal) {
+            feedbackModal.classList.add('hidden');
+            feedbackModal.innerHTML = '';
+          }
+          ['status-copia-whatsapp', 'status-copia-barra', 'status-copia-caixa', 'status-copia-aba'].forEach(
+            (id) => {
+              const el = document.getElementById(id);
+              if (el) {
+                el.classList.add('hidden');
+                el.textContent = '';
+              }
+            }
+          );
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+
+        function fechar() {
+          if (!modal) return;
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+
+        abridores.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            if (btn.tagName === 'A') {
+              exibirContingenciaWhatsApp(
+                btn.getAttribute('href') || WHATSAPP_DEFAULT_URL,
+                `Caso este preview bloqueie a nova aba, use o link direto para ${WHATSAPP_FORMATTED} ou clique em "Copiar link":`
+              );
+              return;
+            }
+            e.preventDefault();
+            abrir(btn.getAttribute('data-open-modal'));
+          });
+        });
+
+        if (fecharBtn) fecharBtn.addEventListener('click', fechar);
+
+        if (modal) {
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) fechar();
+          });
+        }
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+            fechar();
+          }
+        });
+
+        if (formModal) {
+          formModal.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nomeInput = document.getElementById('modal-input-nome');
+            const nome = nomeInput ? nomeInput.value.trim() : '';
+            const cat = selectCat ? selectCat.value : 'Atendimento Geral';
+            const msg = `Olá, me chamo ${nome || 'parceiro'} e tenho interesse em ${cat} no Brasil Repasses (MT • PR • SP).`;
+            const urlPersonalizada = montarUrlWhatsApp(msg);
+
+            atualizarLinksModal(urlPersonalizada);
+            abrirUrlWhatsAppComContingencia(
+              urlPersonalizada,
+              `Mensagem pronta para ${WHATSAPP_FORMATTED}. Se a nova aba não abrir neste preview, clique no link ou em "Copiar link":`
+            );
+
+            if (feedbackModal) {
+              feedbackModal.classList.remove('hidden');
+              feedbackModal.innerHTML = `
+                <p class="font-semibold text-gold-300">Link pronto para ${escaparTexto(nome || 'parceiro')} (${escaparTexto(cat)}):</p>
+                <a href="${escaparTexto(urlPersonalizada)}" target="_blank" rel="noopener noreferrer" class="underline font-bold text-gold-400 break-all">
+                  ${escaparTexto(urlPersonalizada)}
+                </a>
+              `;
+            }
+          });
+        }
+      }
+
+      function iniciarAplicacao() {
+        const anoEl = document.getElementById('ano-rodape');
+        if (anoEl) {
+          anoEl.textContent = String(new Date().getFullYear());
+        }
+
+        sincronizarLinksWhatsApp();
+        configurarDeteccaoCliquesWhatsApp();
+        carregarVeiculos();
+        carregarSessao();
+        atualizarBadgeStorage();
+        configurarAbas();
+        configurarFiltros();
+        configurarLoginECadastro();
+        configurarModalWhatsApp();
+        atualizarInterfaceLogin();
+        renderizarVitrine();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', iniciarAplicacao);
+      } else {
+        iniciarAplicacao();
+      }
+    })();
+  </script>
+</body>
+</html>
+```
